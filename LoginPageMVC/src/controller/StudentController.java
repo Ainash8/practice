@@ -25,10 +25,6 @@ public class StudentController {
 	@RequestMapping("/processForm")
 	public String processForm(@ModelAttribute("student") Student theStudent) {
 		System.out.println("the Student : " + theStudent.getFirstName() + " " + theStudent.getLastName());
-		/*Map<String, String> model = new HashMap<>();
-		model.put("firstName", theStudent.getFirstName());
-		model.put("lastName", theStudent.getLastName());
-		return new ModelAndView("student-confirmation", model);*/
 		return "student-confirmation";
 	}
 }

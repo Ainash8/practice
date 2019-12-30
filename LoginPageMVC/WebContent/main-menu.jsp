@@ -10,5 +10,6 @@
 <h2>Spring mvc demo home page</h2>
 <hr><a href = "hello/showForm">Form link</a>
 <hr><a href = "student/showForm">Student Form link</a>
+<hr><a href = "customer/showForm">Customer Form link</a>
 </body>
 </html>

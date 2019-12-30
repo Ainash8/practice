@@ -15,6 +15,17 @@
 	<br><br>
 	Last Name :<input type ="text" name= "lastName">
 	<br><br>
+	Country :<select name="country">
+  		<option value="India">India</option>
+  		<option value="Japan">Japan</option>
+  		<option value="America">America</option>
+  		<option value="England">England</option>
+	</select>	
+	<br>
+	<br>
+	Gender:
+	<input type="radio" name="gender" value="male"> Male
+	<input type="radio" name="gender" value="female"> Female<br>
 <input type = "Submit" value = "Submit"/>
 </form>
 

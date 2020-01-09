@@ -9,6 +9,7 @@ public class Test {
 		Configuration cfg = new Configuration();
 		cfg.configure("resources/hibernate.cfg.xml");
 		cfg.buildSessionFactory();
+		System.out.println("Done");
 	}
 
 }

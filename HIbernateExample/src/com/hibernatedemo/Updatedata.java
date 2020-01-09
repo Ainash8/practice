@@ -6,9 +6,9 @@ import org.hibernate.cfg.Configuration;
 
 import com.hibernate.annotation.Student;
 
-public class Test {
+public class Updatedata {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		
 		SessionFactory sf = new Configuration()
@@ -18,11 +18,18 @@ public class Test {
 		
 		Session session = sf.getCurrentSession();
 		try {
+			int studentId = 3;
 			System.out.println("begin....");
-			Student st = new Student("Acchut","Devkule","Acchut.devkule@gmail.com");
+
 			session.beginTransaction();
-			System.out.println("Saving data");
-			session.save(st);
+			System.out.println("Getting Student with Id" +studentId);
+			
+			Student st = session.get(Student.class,studentId);
+			System.out.println("Updating student");
+			
+			st.setLastName("XXXCCCC");
+
+			System.out.println(st);
 			session.getTransaction().commit();
 			System.out.println("Done");
 		}

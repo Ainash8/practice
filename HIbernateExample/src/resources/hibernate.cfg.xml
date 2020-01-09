@@ -20,7 +20,7 @@
       
     <property name = "hibernate.connection.password">root</property>
     
-    <property name = "connection.pool_size">1</property>
+    <property name = "connection.pool_size">10</property>
     
     <property name = "current_session_context_class">thread</property>
    <!--  <mapping resource="resources/employee.hbm.xml"/>  
